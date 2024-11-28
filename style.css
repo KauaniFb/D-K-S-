@@ -1,0 +1,459 @@
+html, body {
+  font-family: "Permanent Marker", cursive;
+  background-color: rgb(43,41,41);
+  font-size: 38px;
+  font-weight: 700;
+}
+
+h1{
+  background-color: transparent;
+  font-family: "Pirata One", system-ui;
+  font-size:30px;
+  display: flex;
+  color: black;
+}
+
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.container img{
+  height:100px;
+  padding: 20px;
+}
+
+.topo{
+  display: flex;
+  background-color:rgb(24,24,54);
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu{
+  height: 1px;
+  width: 1px;
+  display:inline-block;
+  background-image: url("menu.png");
+  background-position: center;
+  background-size: cover;
+  font-size: 30px;
+}
+
+.menuimg{
+  padding: 1em;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.listamenu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: red;
+  box-shadow: 0 2px 5px gray;
+  z-index: 1000;
+  border-radius: 0 0 20px 20px;
+  text-transform: uppercase;
+}
+
+.abrirmenu:checked ~.listamenu{
+  display: block;
+}
+
+.menulink{
+  text-decoration: none;
+  color: rgb(102,10,10);
+}
+
+.listamenu .menuitem:hover{
+  background-color: white;
+}
+
+.menulink:hover{
+  color:red;
+  font-weight:1000;
+}
+
+.inicio{
+  background: url("imagem.webp") no-repeat;
+  background-size: cover;
+  color: red;
+  font-size: 20px;
+  text-align:center;
+  padding: 2.5em 2em;
+  margin-bottom: 1em;
+  box-shadow: 5px 4px 4px red;
+  font-weight: 100;
+}
+
+.iniciotitulo{
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+}
+
+.iniciotexto{
+  font-weight: 500;
+  margin: 1em;
+}
+
+.pesquisa{
+  background-coloransparent;
+  border: 3px solid rgb(94,7,7);
+  color: rgb(156,6,6);
+  border-radius:24px;
+  padding: 2em;
+  width: 70%;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 900;
+  margin: 2em;
+}
+
+.pesquisa::placeholder {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+}
+
+.titulo{
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  color: rgb(150,10,10);
+  background-color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 0.5em 0;
+  box-shadow: 5px 4px 4px gray;
+}
+
+.swiper-slide img{
+  width: 100%;
+  box-shadow: 5px 4px 4px gray;
+}
+.swiper-wrapper{
+  padding-top: 20px;
+}
+
+.swiper{
+  margin: 50px;
+}
+
+.swiper-pagination-bullet, .swiper-pagination-active{
+  background-color: red;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: purple;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+ olor: red;
+}
+
+.indicacoes{
+  background: rgba(7,6,7,0.67);
+  flex-directio: row;
+  box-shadow: 0px 4px 4px gray;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em 1em 1em 3em;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.descricao{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.descricaotitulo{
+  color:rgb(228,18,18);
+  font-weight: 700;
+  display: flex;
+  font: 30px;
+}
+
+.descricaolivro{
+  color: rgb(121,4,4);
+  font-size: 50px;
+  margin: 0.5em 0;
+  display: flex;
+  padding-right: 50px;
+}
+
+.descricaotexto{
+  font-size: 30px;
+  color: whitesmoke;
+  display: flex;
+  padding-right: 100px;
+  text-align: justify;
+  width: 100%;
+}
+
+.descricaoimg{
+  height: 500px;
+  width: auto;
+  display: flex;
+  margin-bottom: 80px;
+  border-radius: 40px;
+  box-shadow: 10px px rgba(0,0,0,0.25);
+}
+
+.botoes{
+  display: flex;
+}
+
+.botoes img{
+  width:40px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.saibamais{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.botao{
+  background-color: black;
+  padding: 1em 2.2em;
+  display: block;
+  margin: auto;
+  color: red;
+  text-decoration: none;
+  border-radius: 200px;
+  max-width: 100px;
+  box-shadow: 0px 4px 4px rgba(0,0,0.25);
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+}
+
+.botao:hover{
+  background-color: rgb(177,3,3);
+  font-weight: 500;
+  font-size: 28px;
+  color: black;
+  
+}
+
+.autor{
+  width: 300px;
+  margin-top: 90px;
+  margin-left: 5px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;border-radius: 30px;
+  box-shadow: 10px 10px rgba(0,0,0,0,2);
+}
+
+.menor{
+  width: 300px;
+  height: auto;
+}
+
+.topicos{
+  background: rgb(82,79,79);
+  text-align: center;
+  padding: 1em;
+}
+
+.topicostitulo{
+  color: black;
+  font-weight: 300;
+  margin-bottom: 1em;
+  font-size: 35px;
+}
+
+.topicoslista{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topicositem{
+  margin: 1em 0.5em;
+}
+
+.topicoslink{
+  color: red;
+  padding: 1em;
+  background-color: black;
+  border-radius: 200px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  box-shadow: 0px 6px 6px rgba(0,0,0,0.2);
+}
+
+.topicoslink:hover{
+  background-color:rgb(187,1,1);
+  font-size: 25px;
+  font-weight: 900;
+  color: black;
+}
+
+.contato{
+  background-color: black;
+  padding: 3em 2em 3em 2em;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contatotitulo{
+  font-size: 25px;
+  color: red;
+  font-family: "Rubik Wet Paint", system-ui;
+
+}
+
+.contatotexto{
+  margin: 2em 0;
+  color: white;
+}
+
+.contatoemail{
+  background-color: transparent;
+  border: 1px solid rgb(150,4,4);
+  color: white;
+  border-radius: 100px;
+  padding: 2em;
+  width: 60%;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+}
+
+.contatoemail::placeholder{
+  color: red;
+  opacity: 0.7;
+  background: url("cartinha.png") no-repeat 10%;
+  background-size: 35px;
+  width: 100%;
+}
+
+.contato input{
+  padding: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+.rodape{
+  background-color: rgb(24,24,54);
+  padding: 1em;
+  font-family: "Pirata One", system-ui;
+
+}
+
+.rodapetitulo{
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  color: rgb(150,10,10);
+  background-color: black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 0.5em 0;
+  boxadow: 5px 4px 4px gray;
+  margin-bottom: 20px;
+}
+
+.listarodape{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 10px;
+}
+
+.rodapeitem{
+  display: flex;
+  align-items: center;
+}
+
+.rodapeitem img{
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 5px 4px 4px rgb(97,96,96);
+}
+
+.rodapelink{
+  color: black;
+  text-decoration: none;
+  margin-left: 0.6em;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px){
+  .opcoes{
+    display: flex;
+    padding-left: 5em;
+    gap: 2em;
+  }
+  .opcoesitem, .opcoeslink{
+    border-radius: 100px;
+  }
+  .opcoesitem{
+    padding: 0.5em;
+    box-shadow: 5px 4px 4px silver;
+    font-size: 25px;
+
+  }
+  .opcoeslink{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+  }
+  .opcoesitem:hover, .opcoeslink:hover{
+    background-color: rgb(49,49,124);
+    font-weight: 1000;
+    color:rgb(94,1,1);
+    border-radius:100px;
+  }
+  .menuimg{
+    display: none;
+  }
+  .pc{
+    display: none;
+  }
+  .listamenu{
+    left: 35%;
+  }
+}
+
+@media (max-width:799px){
+  .container img, .menuimg{
+    width: 30px;
+    height: 30px;
+    padding: 0.5em;
+  }
+  
+  .opcoes{
+    display: none;
+  }
+}
