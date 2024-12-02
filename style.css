@@ -103,9 +103,9 @@ input[type="checkbox"]{
 }
 
 .pesquisa{
-  background-coloransparent;
+  background-color: rgb(124,8,8);
   border: 3px solid rgb(94,7,7);
-  color: rgb(156,6,6);
+  color: black;
   border-radius:24px;
   padding: 2em;
   width: 70%;
@@ -115,8 +115,8 @@ input[type="checkbox"]{
 }
 
 .pesquisa::placeholder {
-  font-size: 20px;
-  color: white;
+  font-size: 30px;
+  color: black;
   font-weight: 400;
   text-align: center;
 }
@@ -298,8 +298,8 @@ input[type="checkbox"]{
   background-color: black;
   border-radius: 200px;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 22px;
   box-shadow: 0px 6px 6px rgba(0,0,0,0.2);
 }
 
@@ -453,7 +453,93 @@ input[type="checkbox"]{
     padding: 0.5em;
   }
   
+  .menu{
+    width: 10px;
+    height: 10px;
+  }
+  
   .opcoes{
     display: none;
   }
+  h1{
+    font-size:25px;
+    text-align: center;
+  }
+  
+  .listamenu{
+    font-size:17px;
+  }
+  
+  .pesquisa::placeholder, .contatoemail::placeholder{
+    font-size: 13px;
+  }
+  .titulo{
+    font-size: 25px;
+    width: 80%;
+  }
+  
+  .descricao, .descricaotexto, .descricaolivro, .descricaotitulo, .topicoslink, .topicoslink, .iniciotexto{
+font-size:20px;
+}
+  
+   .iniciotitulo{
+    font-size: 35px;
+  }
+  .indicacoes{
+    padding: 1em;
+  }
+  .botao{
+    padding: 1em 1em;
+    max-width: 70px;
+  }
+  .contatotitulo, .contatotexto{
+    font-size: 30px;
+    max-width: 90%;
+  }
+  .contatoemail::placeholder{
+    background: auto;
+    background-image: none;
+  }
+  .saibamais{
+    width: auto;
+    padding: 0;
+  }
+  .saibamais img, .autor{
+    width: 130px;
+    height: auto;
+    max-width: 90%;
+    margin-top: 5em;
+  }
+  .botao{
+    width: 50%;
+  }
+  .swiper-slide img{
+    width: 80px;
+    height: auto;
+    gap: 20px;
+  }
+  .topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .topicostitulos{
+    font-size:25px;
+  }
+  .topicositem{
+    height: 40px;
+    font-size: 14px;
+  }
+  .topicoslink:hover{
+    font-size: 22px;
+  }
+  
+  .listarodape, .rodapelink{
+    display: none;
+  }
+  .rodapetitulo{
+    font-size: 15px;
+    width: 80%;
+  }
+  
 }
